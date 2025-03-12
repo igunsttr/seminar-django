@@ -1,7 +1,8 @@
-install microsoft VCC terbaru, di https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-install laragon versi 6, di https://filehippo.com/download_laragon/   (laragon versi 7 keatas adalah berbayar)
-install python 3 di laragon, menu 
-tentukan direktori proyek, misal di d:/web
+HOW TO : 
+1.install microsoft VCC terbaru, di https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+2.install laragon versi 6, di https://filehippo.com/download_laragon/   (laragon versi 7 keatas adalah berbayar)
+3.install python 3 di laragon, menu 
+4. tentukan direktori proyek, misal di d:/web
 
 -----Laragon Terminal------
 cd d:

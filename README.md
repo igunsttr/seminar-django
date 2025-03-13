@@ -10,7 +10,7 @@ cd web
 pip install django
 pip install django-admin
 django-admin startproject namaproyek
-python manage.py makemigrations
-python manage.py migrate
+python manage.py makemigrations namaproyek
+python manage.py migrate namaproyek
 python manage.py createsuperuser
 python manage.py runserver

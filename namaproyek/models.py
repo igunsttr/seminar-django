@@ -1,4 +1,5 @@
 from django.db import models
+
 class Jurusan(models.Model):
     no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
     nama=models.CharField(max_length=100, blank=False, null=False)
@@ -6,6 +7,7 @@ class Jurusan(models.Model):
         return self.nama
     class Meta:
         verbose_name_plural = "Tabel Jurusan"
+
 class Mahasiswa(models.Model):
     no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
     no_ktp=models.CharField(unique=True, max_length=16)
@@ -16,11 +18,13 @@ class Mahasiswa(models.Model):
     email=models.EmailField(max_length=100, blank=False, null=False)
     status=models.BooleanField(default=0)
     id_jurusan=models.ForeignKey(Jurusan, on_delete=models.CASCADE, blank=True, null=True)
-    
+    #poto=models.CharField(max_length=12, blank=False, null=False)
+
     def __str__(self):
         return self.nama
     class Meta:
         verbose_name_plural = "Tabel Mahasiswa"
+
 class Dosen(models.Model):
     no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
     no_ktp=models.CharField(unique=True, max_length=16)
@@ -63,7 +67,6 @@ class Matkul(models.Model):
     nama=models.CharField(max_length=100, blank=False, null=False)
     id_jurusan=models.ForeignKey(Jurusan, on_delete=models.CASCADE, blank=True, null=True)
     sks=models.IntegerField(blank=False, null=False)
-
     def __str__(self):
         return self.nama
     class Meta:

@@ -14,3 +14,9 @@ python manage.py makemigrations namaproyek
 python manage.py migrate namaproyek
 python manage.py createsuperuser
 python manage.py runserver
+
+website django databable, https://pypi.org/project/django-ajax-datatable/
+Website plugin django, https://djangopackages.org/
+url plugin export import https://django-import-export.readthedocs.io/
+Django plugin styling https://grappelliproject.com/
+

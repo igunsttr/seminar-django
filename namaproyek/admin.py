@@ -2,7 +2,7 @@ from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 
 admin.site.site_header = 'Halaman Administrasi'
-from .models import  Jurusan, Mahasiswa, Gedung, Ruang, Jadwal, Dosen, Matkul
+from .models import  Jurusan, Mahasiswa, Gedung, Ruang, Jadwal, Dosen, Matkul, Bukutamu
 #admin.site.register(Jurusan)
 admin.site.register(Mahasiswa)
 admin.site.register(Gedung)
@@ -10,6 +10,7 @@ admin.site.register(Ruang)
 admin.site.register(Jadwal)
 admin.site.register(Dosen)
 admin.site.register(Matkul)
+admin.site.register(Bukutamu)
 
 from import_export import resources, widgets, fields
 from import_export.admin import ImportExportMixin

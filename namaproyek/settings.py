@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
     'namaproyek',
     'grappelli',
     'django.contrib.admin',
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ajax_datatable',
     'import_export',
+    
 
 ]
 
@@ -137,3 +139,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "uni_form"
+CRISPY_TEMPLATE_PACK = "uni_form" 

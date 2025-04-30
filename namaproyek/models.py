@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Jurusan(models.Model):
     no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
@@ -83,3 +84,15 @@ class Jadwal(models.Model):
 
     class Meta:
         verbose_name_plural = "Tabel Jadwal"
+
+class Bukutamu(models.Model):
+    no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
+    nama=models.CharField(max_length=100, blank=False, null=False)
+    jk=models.BooleanField(blank=False, null=False)
+    hp=models.CharField(max_length=13, blank=False, null=False)
+    pesan=models.TextField(max_length=1000, blank=False, null=False)
+    waktu=models.TimeField(default=timezone.now(), blank=False, null=False)
+    id_jurusan=models.ForeignKey(Jurusan, on_delete=models.CASCADE, blank=True, null=True)
+
+    class Meta:
+        verbose_name_plural = "Tabel Buku tamu"

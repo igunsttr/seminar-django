@@ -88,6 +88,7 @@ class Jadwal(models.Model):
 class Bukutamu(models.Model):
     no=models.AutoField(auto_created = True, primary_key=True, serialize=True)
     nama=models.CharField(max_length=100, blank=False, null=False)
+    email=models.EmailField(default="", max_length=100, blank=False, null=False)
     jk=models.BooleanField(blank=False, null=False)
     hp=models.CharField(max_length=13, blank=False, null=False)
     pesan=models.TextField(max_length=1000, blank=False, null=False)

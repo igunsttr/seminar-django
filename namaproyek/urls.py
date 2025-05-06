@@ -30,4 +30,5 @@ urlpatterns = [
     path('dt_contact', dt_jadwal.Jadwalku.as_view(), name="dt_contact"),
     path('contact', v.contact, name='contact'),
     path('buku_tamu', v.buku_tamu, name='buku_tamu'),
+    path('buku_tamu2', v.buku_tamu2, name='buku_tamu2'),
 ]
